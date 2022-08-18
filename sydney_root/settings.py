@@ -31,14 +31,36 @@ ALLOWED_HOSTS = []
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'bhevball@gmail.com'
+EMAIL_HOST_USER = 'bhevball@gmail.com'#sydney.828talents@gmail.com'
 EMAIL_HOST_PASSWORD = 'qskzvcglfpvvbvhc'
+#sydneys login stuff
+#avanpbzjupswwyha'#'Sky08282002!'#' #to be filled in
 
 
 GALLERY_LOGO_PATH = ''
-GALLERY_FOOTER_INFO = 'Modeling Portfolio'
+GALLERY_FOOTER_INFO = 'Portfolio'
 GALLERY_FOOTER_EMAIL = 'sydney.828talents@gmail.com'
+#GALLERY_THEME_COLOR
 
+
+#default: 200
+#The target thumbnail height in px. This will vary slightly in rendering due to the justified layout
+#   GALLERY_THUMBNAIL_SIZE
+#default: 1000
+#The preview size in px - width or height, whichever is largest. The rendered image size will depend on the 
+#size of the browser window, so this should be set high enough to not cause a deterioration in quality
+#   GALLERY_PREVIEW_SIZE
+#default: 80
+#JPEG quality (0-100) of the preview and thumbnail images
+#   GALLERY_RESIZE_QUALITY
+#default: 2
+#The actual preview and thumbnail sizes are multiplied by this number, but rendered according to the quoted value. 
+#This enables high dpi displays, such as many mobile devices to show more detail and take advantage of their extra resolution. 
+#Some go up to 4x now, so recommended values are 1-4
+#   GALLERY_HDPI_FACTOR 
+#default: 6
+#Margin between thumbnails in px. This can create a more or less condensed look
+#   GALLERY_IMAGE_MARGIN
 
 
 # Application definition
@@ -141,3 +163,4 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+APPEND_SLASH = True

@@ -18,11 +18,12 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 
+#do i need a trailing slash in my URLSpatterns?
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     #request sent to the urls file in pages app
     path('quote/', include('quotes.urls')),
-    path('gallery/', include('gallery.urls')),
+    path('gallery', include('gallery.urls')),
     path('', include('pages.urls')),
 ]
 
